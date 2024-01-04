@@ -1,0 +1,91 @@
+html,
+body {}
+
+button {
+    text-align: center;
+    padding: 0;
+    background: hsl(60, 20%, 90%);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button svg {
+    width: 100%;
+    height: 100%;
+}
+
+button text {
+    text-anchor: middle;
+    font-size: 24px;
+    font-family: var(--sans-serif, Arial);
+}
+
+button.current-control {
+    background: hsl(60, 100%, 80%);
+    outline: 2px solid hsl(220, 50%, 50%);
+}
+
+button:focus {
+    outline: none;
+}
+
+input[type="range"] {
+    cursor: ew-resize;
+    margin-left: 0;
+    margin-right: 0;
+    accent-color: hsl(0, 50%, 50%);
+}
+
+button:disabled,
+input:disabled {
+    cursor: unset;
+    opacity: 0.25;
+}
+
+#buttons,
+#sliders {
+    margin-top: 15px;
+}
+
+#sliders {
+    display: flex;
+    flex-direction: row;
+}
+
+#mapgen4 {
+    width: 512px;
+    height: 512px;
+    cursor: crosshair;
+}
+
+#buttons>button {
+    width: 48px;
+}
+
+#sliders>* {
+    margin-right: 15px;
+    ;
+}
+
+#sliders h3 {
+    background-color: hsl(60, 20%, 90%);
+    margin: 0.5em 0;
+    padding: 0.5em;
+    font-family: var(--sans-serif, sans-serif);
+    font-size: 66%;
+}
+
+#sliders label {
+    display: block;
+    font-size: 66%;
+}
+
+#sliders label>* {
+    max-width: 99%;
+}
+
+#sliders label span {
+    font-family: var(--monospace, monospace);
+    display: inline-block;
+    width: 17ch;
+}

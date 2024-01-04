@@ -1,0 +1,3 @@
+[submodule "src/map-gen-4"]
+	path = src/map-gen-4
+	url = git@github.com:redblobgames/mapgen4.git
